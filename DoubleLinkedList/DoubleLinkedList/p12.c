@@ -13,5 +13,6 @@ int main() {
 	InsertNode(L);
 	InsertNode(L);
 	PrintList(L);
+	PrintList(L);
 	
 }
