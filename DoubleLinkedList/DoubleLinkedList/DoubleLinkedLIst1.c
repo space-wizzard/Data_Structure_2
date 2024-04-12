@@ -41,6 +41,7 @@ void InsertNode(HeadNode* L) {
 	newnode = CreateNode();
 	char x[10] = { 0, };
 	printf("Target Node?");
+	printf("Target ");
 	scanf("%s", x);
 	if (L->head == NULL) {		// 헤드 노드에 아무것도 없는 경우(연결리스트에 아무것도 없을 때)
 		L->head = newnode;	// 새 노드를 헤드 포인터로 지정
