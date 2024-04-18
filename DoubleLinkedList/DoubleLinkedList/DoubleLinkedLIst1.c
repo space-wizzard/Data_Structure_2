@@ -3,6 +3,7 @@
 HeadNode* CreateLinkedList() {
 	HeadNode* newnode = NULL;
 	newnode = (HeadNode*)malloc(sizeof(HeadNode));
+	if (newnode == NULL) exit(1);
 	newnode->head = NULL;
 	return newnode;
 }
@@ -39,7 +40,8 @@ void InsertNode(HeadNode* L) {
 	ListNode* left= NULL;
 	ListNode* newnode = NULL;
 	newnode = CreateNode();
-	char x[10] = { 0, };
+	char x[10];
+
 	printf("Target Node?");
 	printf("Target ");
 	scanf("%s", x);
@@ -81,4 +83,27 @@ void PrintList(HeadNode* L) {
 	}
 	
 
+}
+
+int CountNode(HeadNode* L) {
+	int count = 1;
+	ListNode* temp = L->head;
+	while (temp->rlink != NULL) {
+		temp = temp->rlink;
+		count++;
+	}
+	return count;
+}
+
+ListNode* SearchNthNode(HeadNode* L,int n) {
+	ListNode* target = L->head;
+	int count = 1;
+	while (1) {
+		target = target->rlink;
+		count++;
+		if (count == n)
+			break;
+
+	}
+	return target;
 }

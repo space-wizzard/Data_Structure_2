@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="p12.c">
+    <ClCompile Include="p1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="DoubleLinkedList1.c">
@@ -23,7 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DoubleLinkedList1.h">
+    <ClInclude Include="DoubleLinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

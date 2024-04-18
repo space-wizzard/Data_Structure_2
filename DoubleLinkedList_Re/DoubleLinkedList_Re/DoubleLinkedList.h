@@ -15,9 +15,12 @@ typedef struct {
 }HeadNode;
 
 HeadNode* CreateLinkedList();
-void PrintList(HeadNode*L);
+void PrintList(HeadNode* L);
 ListNode* CreateNode();
-void InsertNode(HeadNode* L);
+void InsertNodeFirst(HeadNode* L);
 ListNode* SearchNode(HeadNode* L, char* x);
 int CountNode(HeadNode* L);
 ListNode* SearchNthNode(HeadNode* L, int n);
+int SearchDay(HeadNode* L, char* x);
+void InsertNodeMiddle(ListNode* newnode, ListNode* left);
+void InsertNodeLast(ListNode* newnode, ListNode* left);
