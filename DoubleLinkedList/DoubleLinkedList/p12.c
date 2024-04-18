@@ -13,6 +13,7 @@ int main() {
 	InsertNode(L);
 	InsertNode(L);
 	PrintList(L);
+	InsertNode(L);
 	printf("%d",CountNode(L));
 	int n;
 	scanf("%d", &n);
