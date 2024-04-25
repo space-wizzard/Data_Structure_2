@@ -143,6 +143,7 @@ void DeleteNode(HeadNode*node) {
 			currnode = node->head;
 		}
 	}
+	prevnode->next = NULL;
 	prevnode->next = targetNode->next;
 	free(targetNode);
 	
@@ -175,7 +176,7 @@ int main() {
 	InsertLastNode(l);
 	DeleteNode(l);
 	InsertLastNode(l);
-	CreateCircleLinkedList(l);
+	//CreateCircleLinkedList(l);
 	PrintNode(l);
 	FreeNode(l);
 }
