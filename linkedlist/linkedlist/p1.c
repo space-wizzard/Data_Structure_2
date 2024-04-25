@@ -15,6 +15,10 @@ typedef struct {
 	ListNode* head;
 }HeadNode;
 
+
+//void InsertFirst(int data) {
+//
+//}
 HeadNode* CreateLinkedList() {
 	HeadNode* newnode;
 	newnode = (HeadNode*)malloc(sizeof(HeadNode));
@@ -44,7 +48,7 @@ void InsertFirstNode(HeadNode* node) {
 	printf("Insert node first\n");
 	ListNode* newnode = CreateNode();
 
-
+	printf("node->head:%p", node->head);
 	// insert address of previous headnode in newnode->next
 	newnode->next = node->head;
 	// Update headnode to 'newnode'
@@ -69,6 +73,7 @@ void InsertMiddleNode(HeadNode* L) {
 	printf("Input target data\n");
 	scanf("%d", &target);
 	while (1) {
+		
 		if (target == currnode->data) {
 			targetNode = currnode;
 			break;
