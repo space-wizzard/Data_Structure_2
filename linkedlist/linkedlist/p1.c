@@ -132,10 +132,6 @@ void DeleteNode(HeadNode*node) {
 		
 		prevnode = currnode;
 		currnode = currnode->next;
-		
-		
-		
-
 		if (currnode == NULL) {
 			printf("No data\n");
 			scanf("%d", &target);
