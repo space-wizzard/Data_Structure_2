@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6866ee63-4bd8-408f-969c-c04f0f42cbeb}</ProjectGuid>
-    <RootNamespace>stack</RootNamespace>
+    <ProjectGuid>{391c7cde-4d55-40a5-9d36-3ca059fdf073}</ProjectGuid>
+    <RootNamespace>LRULeastRecentlyUsed</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,10 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="p1.c" />
-    <ClCompile Include="Stack.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
