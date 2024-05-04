@@ -1,16 +1,34 @@
 #include "LRU.h"
 
-Nodeh* CreateLinkedList() {
-	Nodeh* head = malloc(sizeof(Node));
-	head->top = NULL;
-	return head;
+void CreateDoubleLinkedList(int n) {
+	Nodeh* h = malloc(sizeof(Node));
+	h->top = CreateNode();
+	Node* prev = h->top;
+	Node* current = NULL;
+	for (int i = 0; i < n; i++) {
+		//printf("%p\n", prev->rlink);
+		current = CreateNode();
+		current->llink = prev;
+		prev->rlink = current;
+		prev = current;
+	}
+	PrintNode(h->top);
 }
 
-Node* CreateNode(Node*prev,Node*curr) {
-	Node* newnode = malloc(sizeof(Node));
-	newnode->llink = prev;
-	newnode->rlink = NULL;
-	scanf("%d", &newnode->data);
+void PrintNode(Node* current) {
+	while (current != NULL){
+		printf("%d ", current->data);
+		current = current->rlink;
+	}
+}
 
+Node* CreateNode() {
+	Node* newnode = (Node*)malloc(sizeof(Node));
+	if (newnode == NULL) {
+		return NULL;
+	}
+	newnode->llink = NULL;
+	newnode->rlink = NULL;
+	newnode->data = 0;
 	return newnode;
 }

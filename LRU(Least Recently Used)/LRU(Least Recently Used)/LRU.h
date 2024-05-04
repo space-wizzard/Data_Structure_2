@@ -13,5 +13,6 @@ typedef struct {
 	Node* top;
 }Nodeh;
 
-Nodeh* CreateLinkedList();
-Node* CreateNode(Node* prev,Node*curr);
+void CreateDoubleLinkedList(int n);
+Node* CreateNode();
+void PrintNode(Node* current);
