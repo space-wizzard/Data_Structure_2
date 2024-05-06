@@ -13,6 +13,11 @@ typedef struct {
 	Node* top;
 }Nodeh;
 
-void CreateDoubleLinkedList(int n);
+Nodeh* CreateDoubleLinkedList(int n);
 Node* CreateNode();
-void PrintNode(Node* current);
+void PrintNode(Nodeh* L);
+void InsertNode(Nodeh* head);
+int CountNode(Nodeh* L);
+void DeleteNode(Nodeh* L);
+Node* SearchNode(Nodeh* L, int data);
+void MoveNode(Nodeh* head, Node* target);
