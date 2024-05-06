@@ -31,9 +31,9 @@ void DeleteNode(Nodeh* L) {
 
 void MoveNode(Nodeh* head, Node* target) {
 	// target node가 첫번째 노드인 경우
-	if (head->top == target) {
+	if (head->top == target) 
 		return;
-	}
+	
 	
 	// target node가 마지막 노드인 경우 제외
 	if (target->rlink != NULL) {
@@ -42,9 +42,9 @@ void MoveNode(Nodeh* head, Node* target) {
 
 	}
 	// 마지막 노드인 경우
-	else {
+	else 
 		target->llink->rlink = NULL;
-	}
+	
 	// target node를 head node로 변경하는 과정
 	target->rlink = head->top;
 	target->llink = NULL;
