@@ -30,6 +30,8 @@ int main() {
 			printf("Finish");
 			FreeNode(L);
 			break;
+		case 5:
+			DeleteNode(L, L->head);
 		}
 	}
 	

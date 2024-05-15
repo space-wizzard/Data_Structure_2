@@ -24,6 +24,17 @@ ListNode* CreateNode() {
 
 }
 
+void DeleteNode(HeadNode* L, ListNode* old) {
+	if (old->llink == NULL) {
+		L->head = old->rlink;
+		free(old);
+	}
+	else {
+		old->llink = old->rlink;
+		free(old);
+	}
+}
+
 ListNode* SearchNode(HeadNode* L, char* x) {
 	ListNode* curr = L->head;
 	while (curr != NULL) {

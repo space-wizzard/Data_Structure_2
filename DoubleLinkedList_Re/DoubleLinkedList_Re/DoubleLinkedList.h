@@ -24,3 +24,5 @@ ListNode* SearchNthNode(HeadNode* L, int n);
 int SearchDay(HeadNode* L, char* x);
 void InsertNodeMiddle(ListNode* newnode, ListNode* left);
 void InsertNodeLast(ListNode* newnode, ListNode* left);
+void DeleteNode(HeadNode* L, ListNode* old);
+void FreeNode(HeadNode* L);
