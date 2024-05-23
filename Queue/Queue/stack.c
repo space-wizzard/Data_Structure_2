@@ -36,13 +36,12 @@ element pop(StackType* S) {
 	if (StackEmpty(S))
 		return;
 	else {
-		S->rear--;
-		return S->stack[S->rear];
+		return S->stack[S->rear--];
 	}
 }
 
 void printStack(StackType* S) {
-	for (int i = 0; i < S->rear; i++) {
+	for (int i = 0; i <= S->rear; i++) {
 		printf("%3c", S->stack[i]);
 	}
 	printf("\n");

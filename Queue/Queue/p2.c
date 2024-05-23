@@ -13,9 +13,17 @@ int main() {
 	printStack(S1);
 	data=pop(S1);
 	printf("삭제 데이터:%c\n", data);
+	printStack(S1);
 	data = pop(S1);
 	printf("삭제 데이터:%c\n", data);
+	printStack(S1);
 	data = pop(S1);
 	printf("삭제 데이터:%c\n", data);
+	printStack(S1);
+	push(S1, 'E');
+	printStack(S1);
+	push(S1, 'F');
+	printStack(S1);
+	
 
 }
