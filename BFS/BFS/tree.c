@@ -84,6 +84,8 @@ void TraverseTree(const Node* root){
 
 }
 
+
+
 int main() {
 	Nodeh* h = CreateLinkedList();
 	h->head=CreateNode();
